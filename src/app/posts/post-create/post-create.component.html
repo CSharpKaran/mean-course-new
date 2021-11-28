@@ -1,0 +1,16 @@
+<mat-card style="width: 80%; margin: auto">
+  <mat-form-field style="width: 100%; margin: auto"
+    ><h3>Post Create Component</h3>
+    <textarea style="width: 100%; margin: auto"
+      matInput
+      name=""
+      id=""
+      cols="30"
+      rows="10"
+      [(ngModel)]="txtAreaValue"
+    ></textarea>
+  </mat-form-field><hr>
+  <button mat-raised-button color="primary" (click)="onAddPost()">Save</button>
+
+  <p>{{ addedValue }}</p>
+</mat-card>
